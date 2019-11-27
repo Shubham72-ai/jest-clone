@@ -1,0 +1,122 @@
+body{
+    -webkit-perspective:200px;
+    -moz-perspective:200px;
+    perspective:200px;
+    -webkit-perspective-origin:center 400px /* 300px + 200px/2 */;
+    -moz-perspective-origin:center 400px /* 300px + 200px/2 */;
+    perspective-origin:center 400px /* 300px + 200px/2 */;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+}
+
+.container {
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.item {
+    display: inline-block;
+    background-color: red;
+    border: 1px solid black;
+    height: 310px;
+    width: 250px;
+    border-radius: 10%;
+    vertical-align: baseline;
+}
+
+#one {
+
+    position: relative;
+    background-color: chartreuse;
+    left: 510px;
+    transform: rotate(12deg) translate(160px);
+    bottom: 8px;
+    cursor: pointer;
+
+    
+}
+
+#one:hover {
+    transition: 1s;  /* this transiton property also helps */
+    bottom: 50px;
+
+}
+
+#two {
+    position: relative;
+    background-color: chocolate;
+    left: 240px;
+
+    transform: rotate(8deg) translate(100px);
+    bottom: 10px;
+    cursor: pointer;
+
+  
+}
+
+#two:hover {
+    transition: 1s;  /* this transiton property also helps */
+    bottom: 50px;
+}
+
+#three {
+    background-color: darkmagenta;
+    position: relative;
+    z-index: 100; /* is also preference wise */
+    cursor: pointer;
+    bottom: 10px;
+
+}
+
+#three:hover {
+    transition: 1s;
+    bottom: 30px;
+}
+
+
+#four {
+
+    background-color: goldenrod;
+    position: relative;
+    right: 280px;
+    bottom: 10px;
+    transform: rotate(-8deg) translate(-100px); /* always use rotate withs translate */
+    z-index: 99;
+    cursor: pointer;
+}
+
+#four:hover {
+    transition: 1s;  /* this transiton property also helps */
+    bottom: 50px;
+}
+
+#five {
+
+    background-color: lightgreen;
+    position: relative;
+    right: 580px;
+    transform: rotate(-10deg) translate(-135px);
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+#five:hover {
+    transition: 1s; 
+    bottom: 30px;
+    /* this transiton property also helps */
+}
+
+#hideCard {
+    
+    z-index: 100;
+    position: relative;
+    bottom: 40px;
+    height: 140px;
+    background-color: rgba(72, 255, 0);
+    
+}
